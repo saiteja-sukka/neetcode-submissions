@@ -1,0 +1,32 @@
+variable = "10"
+
+# Don't modify the code below this line
+print(variable)
+print(type(variable))
+
+variable = int(variable)
+
+print(variable)
+print(type(variable))
+
+
+
+
+
+
+
+
+""" Type Errors
+Even though variable types can change, there are still rules about what types of variables can be used together. For example, the following code will cause an error:
+
+message = "Hello"
+message = int(message)
+We can't convert a string to an integer, unless the string is a number. This code will cause a ValueError.
+
+Challenge
+The code on the right will currently throw an error (you can run it to confirm). Can you find the bug and fix it so the output is:
+
+10
+<class 'str'>
+10
+<class 'int'> """
