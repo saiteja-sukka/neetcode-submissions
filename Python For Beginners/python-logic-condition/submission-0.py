@@ -1,0 +1,58 @@
+def discount_applies(age: int) -> bool:
+    if age <18 or age>=65:
+        return True
+    return False
+
+
+
+
+# don't modify this code below this line
+print(discount_applies(17))
+print(discount_applies(18))
+print(discount_applies(40))
+print(discount_applies(65))
+print(discount_applies(70))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+""" Logic Condition
+As we saw earlier, we can use the or, and and not operators to evaluate expressions into True or False. We can use these expressions to execute conditional code blocks.
+
+balance = 500
+
+if balance > 0 and balance < 1000:
+    print("Balance is between 0 and 1000.")
+Challenge
+Implement the discount_applies(age: int) -> bool function. It accepts an integer age and should return True if the age is less than 18, or the age is greater than or equal to 65. Otherwise, it should return False. """
