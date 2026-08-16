@@ -1,0 +1,96 @@
+def check_list_empty(my_list) -> bool:
+    if len(my_list)==0 :
+        return True
+    return False
+    
+
+
+def check_element_in_list(my_list, element) -> bool:
+    if element in my_list:
+        return True
+    return False
+    pass
+
+
+# do not modify below this line
+print(check_list_empty([]))
+print(check_list_empty([1, 2, 3]))
+
+print(check_element_in_list([1, 2, 3], 1))
+print(check_element_in_list([1, 2, 3], 4))
+
+print(check_element_in_list(["Apple", "Banana", "Orange"], "Banana"))
+print(check_element_in_list(["Apple", "Banana", "Orange"], "Grape"))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+""" List Operations
+Lists can also be used within conditional statements. For example, we can check if a list is empty or not:
+
+my_list = [1, 2, 3]
+
+if len(my_list) > 0:
+    print("The list is not empty")
+else:
+    print("The list is empty")
+
+if my_list:
+    print("The list is not empty")
+else:
+    print("The list is empty")
+The above two conditional statements are equivalent. The second one is more concise and is generally preferred.
+
+We can also use the in operator to check if an element is present in a list:
+
+my_list = [1, 2, 3]
+
+if 2 in my_list:
+    print("2 is in the list")
+else:
+    print("2 is not in the list")
+If we want to check if an element is not in the list, we can use the not in operator:
+
+my_list = [1, 2, 3]
+
+if 4 not in my_list:
+    print("4 is not in the list")
+else:
+    print("4 is in the list")
+Challenge
+In the code editor, implement the following two functions:
+
+check_list_empty(my_list) -> bool should return a boolean representing whether the list is empty or not.
+check_element_in_list(my_list, element) -> bool should return a boolean representing whether the element is present in the list or not. The list may contain integers or strings.
+ """
