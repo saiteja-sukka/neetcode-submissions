@@ -1,0 +1,82 @@
+from typing import List, Dict
+
+def create_dict(name: str, age: int) -> Dict[str, int]:
+    my_dict={
+        name : age
+    }
+    return my_dict
+    pass
+
+
+def list_to_dict(words: List[str]) -> Dict[str, int]:
+    results={}
+    for i in range(len(words)):
+        results[words[i]]=i
+    return results
+    
+    pass
+
+
+
+# don't modify code below this line
+print(create_dict("Alice", 25))
+print(create_dict("Jane", 35))
+print(create_dict("Joe", 45))
+
+print(list_to_dict(["Alice", "Jane", "Joe"]))
+print(list_to_dict(["Apple", "Banana", "Watermelon", "Pineapple"]))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+""" Intro to Dictionaries
+Dictionaries are one of the most important data types available in Python. They are used to store key-value pairs. The simplest way of thinking about them is as a table with two columns. The first column is the key, and the second column is the value.
+
+key	value
+"Alice"	25
+"Bob"	30
+"Charlie"	35
+Above we have a dictionary with three key-value pairs. The keys are "Alice", "Bob", and "Charlie", representing names, and the values are 25, 30, and 35, representing the age of each person. In this case, the pair "Alice" -> 25 means that "Alice" is 25 years old.
+
+Another way of phrasing it is we are mapping a key to the value. This is why dictionaries are sometimes called maps or hashmaps in other programming languages.
+
+my_dict = {"Alice": 25, "Bob": 30, "Charlie": 35}
+
+my_dict = {
+    "Alice": 25,
+    "Bob": 30,
+    "Charlie": 35
+}
+The above two dictionaries are equivalent, the second is just formatted differently. A dictionary is created using curly braces {} similar to a set. But dictionaries don't just store values, they store key-value pairs separated by commas. The key and value are separated by a colon :, with the key on the left and the value on the right.
+
+my_dict = {}
+
+my_dict["Alice"] = 25
+my_dict["Bob"] = 30
+my_dict["Charlie"] = 35
+As shown above, to declare an empty dictionary we can use empty curly braces {}. We can then add key-value pairs to the dictionary using square brackets [] and the assignment operator =. This is similar to lists, but keys don't have to be integers.
+
+Challenge
+You are given two functions to implement:
+
+create_dict(name: str, age: int) -> Dict[str, int] should create a dict, mapping the name to the age and then return the dict.
+list_to_dict(words: List[str]) -> Dict[str, int] should take a list of strings words and map each string to its index in the list, and return the resulting dict. """
