@@ -1,0 +1,85 @@
+your_dict = { 
+  "a": 10, 
+  "apple": 12,
+  "bat": 7
+}
+print(your_dict)
+print(your_dict["a"])
+print("d" in your_dict)
+your_dict["a"]=4
+print(your_dict)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+""" Dict Operations
+Dictionaries can't contain duplicate keys, just like sets.
+
+my_dict = {"a": 1, "b": 2, "c": 3}
+
+print(my_dict["a"]) # Output: 1
+
+my_dict["a"] = 4
+
+print(my_dict["a"]) # Output: 4
+As shown above, if we assign the same key a new value, the old value is overwritten.
+
+The values within a dictionary can be of any type, including lists, sets, and even other dictionaries.
+
+my_dict = {"a": [1, 2, 3], "b": {4, 5, 6}, "c": {"x": 7, "y": 8, "z": 9}}
+
+print(my_dict["a"]) # Output: [1, 2, 3]
+print(my_dict["b"]) # Output: {4, 5, 6}
+print(my_dict["c"]) # Output: {"x": 7, "y": 8, "z": 9}
+The keys within a dictionary must be unique, but the values can be duplicated.
+
+my_dict = {"a": 1, "b": 1, "c": 1} # this is valid
+To check if a dictionary contains a key, you can use the in keyword.
+
+my_dict = {"a": 1, "b": 2, "c": 3}
+
+print("a" in my_dict) # Output: True
+print("d" in my_dict) # Output: False
+Challenge
+In the code editor, there is a dictionary called your_dict. Perform the following operations in order:
+
+Print the dictionary itself.
+Print the value of the key "a".
+Print True or False depending on whether the key "d" is in the dictionary.
+Reassign the value of the key "a" to 4.
+Print the dictionary again.
+
+Are key-value pairs in a dict ordered?
+In Python 3.7 and later, dictionaries are ordered by the order in which they were inserted. This means that the order of key-value pairs in a dictionary is preserved. """
