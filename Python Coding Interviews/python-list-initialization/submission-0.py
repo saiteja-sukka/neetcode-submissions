@@ -1,0 +1,20 @@
+from typing import List
+
+
+def create_list_with_value(size: int, index: int, value: int) -> List[int]:
+    arr1=[0]*size
+    for i in range(len(arr1)):
+        if i==index:
+            arr1[index]=value
+
+        
+    return arr1
+    pass
+
+
+
+# do not modify below this line
+print(create_list_with_value(5, 3, 7))
+print(create_list_with_value(1, 0, 5))
+print(create_list_with_value(10, 9, 9))
+print(create_list_with_value(10, 9, 0))
